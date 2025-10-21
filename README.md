@@ -56,3 +56,16 @@ This project has a GitHub Actions workflow configured to run tests on-demand via
 2. Select the branch to run tests on.
 3. Click Run workflow.
 4. When the workflow completes, download the HTML report from the artifacts.
+
+# Import Aliases
+
+TypeScript path aliases are used to simplify imports, mapping aliases to folders or single files. This approach relies on tsconfig.json paths.
+Relative-import approach, which requires ../../ chains - should not be used.
+
+# Code Quality 
+
+This project uses **ESLint**, **Prettier**, and **Husky** to keep the codebase clean and consistent.
+
+- **ESLint** — checks for code errors and enforces best practices.  
+- **Prettier** — automatically formats code for consistency.  
+- **Husky + lint-staged** — run linters and formatters automatically before each commit.

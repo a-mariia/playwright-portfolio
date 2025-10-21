@@ -1,4 +1,4 @@
-import { APIClient } from "./APIClient";
+import { APIClient } from "@api/APIClient";
 
 export class ImdbService {
   constructor(private client: APIClient) {}

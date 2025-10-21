@@ -1,17 +1,36 @@
 {
-  "name": "playwright-portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.56.0",
-    "@types/node": "^24.3.1"
-  },
-  "dependencies": {
-    "dotenv": "^17.2.2"
-  }
+    "name": "playwright-portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "prepare": "husky install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.56.0",
+        "@types/node": "^24.3.1",
+        "@typescript-eslint/eslint-plugin": "^8.46.2",
+        "@typescript-eslint/parser": "^8.46.2",
+        "eslint": "^9.38.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.4",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.2.5",
+        "prettier": "^3.6.2"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.2"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.json": [
+            "prettier --write"
+        ]
+    }
 }

@@ -1,5 +1,5 @@
-import { test } from "../../global-fixture";
-import { Genre } from "../../src/ui/movie.page";
+import { test } from "@global-fixture";
+import { Genre } from "@ui/movie.page";
 
 const movieId = "tt0120338"; // Titanic
 

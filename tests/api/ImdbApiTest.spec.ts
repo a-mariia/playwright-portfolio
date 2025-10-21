@@ -1,4 +1,4 @@
-import { test } from "../../global-fixture";
+import { test } from "@global-fixture";
 import { expect } from "@playwright/test";
 
 const movieId = "tt0120338";
