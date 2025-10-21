@@ -1,8 +1,8 @@
 import { test as base } from "@playwright/test";
 import { Page } from "@playwright/test";
-import { Pages } from "./src/ui/pages";
-import { APIClient } from "./src/api/APIClient";
-import { ImdbService } from "./src/api/ImdbService";
+import { Pages } from "@ui/pages";
+import { APIClient } from "@api/APIClient";
+import { ImdbService } from "@api/ImdbService";
 import * as dotenv from "dotenv";
 
 dotenv.config();

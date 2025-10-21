@@ -1,6 +1,6 @@
 import { expect, Locator } from "@playwright/test";
-import { BasePage } from "./base.page";
-import { step } from "../../decorator";
+import { BasePage } from "@ui/base.page";
+import { step } from "@decorator";
 
 export class MoviePage extends BasePage {
   readonly pageName: string = "Movie Page";

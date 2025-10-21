@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
-import { HomePage } from "./home.page";
-import { MoviePage } from "./movie.page";
+import { HomePage } from "@ui/home.page";
+import { MoviePage } from "@ui/movie.page";
 
 export class Pages {
   readonly page: Page;
@@ -25,4 +25,3 @@ export class Pages {
     return this._moviePage;
   }
 }
-
